@@ -1,0 +1,8 @@
+<configuration>
+    <dataSource>
+        <property name="driver" value="com.mysql"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/toy_mybatis_demo"/>
+        <property name="username" value="root"/>
+        <property name="password" value="riven2832"/>
+    </dataSource>
+</configuration>

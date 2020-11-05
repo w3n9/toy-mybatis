@@ -1,0 +1,12 @@
+<mapper namespace="user">
+    <select id="selectList" resultType="online.stringtek.toy.framework.toymybatisdemo.pojo.User">
+        select * from user
+    </select>
+
+    <select id="selectOne" paramterType="online.stringtek.toy.framework.toymybatisdemo.pojo.User" resultType="online.stringtek.toy.framework.toymybatisdemo.pojo.User">
+        select * from user where id= #{id} and username= #{username}
+    </select>
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+    </mappers>
+</mapper>
