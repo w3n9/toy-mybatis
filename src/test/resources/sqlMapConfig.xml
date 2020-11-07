@@ -1,0 +1,11 @@
+<configuration>
+    <dataSource>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/toy_mybatis_demo"/>
+        <property name="username" value="root"/>
+        <property name="password" value="riven2832"/>
+    </dataSource>
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/ProductMapper.xml"/>
+    </mappers>
+</configuration>

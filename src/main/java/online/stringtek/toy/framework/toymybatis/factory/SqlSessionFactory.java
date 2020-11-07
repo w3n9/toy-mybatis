@@ -1,4 +1,8 @@
 package online.stringtek.toy.framework.toymybatis.factory;
 
-public class SqlSessionFactory {
+import online.stringtek.toy.framework.toymybatis.pojo.Configuration;
+import online.stringtek.toy.framework.toymybatis.pojo.SqlSession;
+
+public interface SqlSessionFactory {
+    SqlSession openSession();
 }
