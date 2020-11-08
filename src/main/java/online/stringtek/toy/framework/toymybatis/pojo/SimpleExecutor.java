@@ -23,7 +23,7 @@ public class SimpleExecutor implements Executor {
         String parameterType = statement.getParameterType();
         String resultType = statement.getResultType();
         PreparedStatement preparedStatement = connection.prepareStatement(boundSQL.getSql());
-        if(args.length>0)
+        if(args!=null&&args.length>0)
             handleParameter(preparedStatement,args[0],parameterType,boundSQL.getParameterNameList());
         ResultSet resultSet = preparedStatement.executeQuery();
         return handleResultSet(resultSet,resultType);

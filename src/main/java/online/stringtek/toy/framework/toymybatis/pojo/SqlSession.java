@@ -6,4 +6,5 @@ import java.util.List;
 public interface SqlSession {
     <T> T selectOne(String id,Class<T> clazz,Object... args) throws Exception;
     <T> List<T> selectList(String id,Class<T> clazz, Object... args) throws Exception;
+    <T> T getMapper(Class<T> mapperClass);
 }
