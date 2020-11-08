@@ -1,6 +1,7 @@
 package online.stringtek.toy.framework.toymybatis.factory;
 
 import online.stringtek.toy.framework.toymybatis.pojo.Configuration;
+import online.stringtek.toy.framework.toymybatis.pojo.DefaultSqlSession;
 import online.stringtek.toy.framework.toymybatis.pojo.SqlSession;
 
 public class DefaultSqlSessionFactory implements SqlSessionFactory {
@@ -11,6 +12,6 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory {
     }
     @Override
     public SqlSession openSession() {
-        return null;
+        return new DefaultSqlSession(configuration);
     }
 }
